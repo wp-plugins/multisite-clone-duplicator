@@ -132,7 +132,7 @@ Action before / after copying users
 Filter options that should be preserved in the new blog (original values from created blog will not be erased by copy of old site's tables)  
 **Args :**
 
-  1. Array of ( 'option_name');
+  1. Array of string : option_name
   
 ---------------------------------------
 = Filter : mucd_default_fields_to_update =
@@ -146,14 +146,14 @@ Filter fields to scan for an update after data copy
 Filter tables to duplicate when duplicated site is primary site  
 **Args :**
 
-  1. Array of ( 'table_name');
+  1. Array of string table_name
   
 ---------------------------------------
 = Filter : mucd_copy_dirs =
 Filter directories and files you want to copy  
 **Args :**
 
-  1. String : string_to_replace
+  1. Array of string : dirs
   2. Int : from_site_id
   3. Int : to_site_id
   
@@ -162,7 +162,7 @@ Filter directories and files you want to copy
 Filter which strings we want to replace during update  
 **Args :**
 
-  1. Array of string : dirs
+  1. String : string_to_replace
   2. Int : from_site_id
   3. Int : to_site_id
   
