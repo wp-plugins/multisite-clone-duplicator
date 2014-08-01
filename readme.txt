@@ -12,8 +12,11 @@ Clones an existing site into a new one in a multisite installation : copies all 
 == Description ==
 
 MultiSite Clone Duplicator adds a "Duplicate Site" functionnality to your network installation.  
+
 It allows you to clone any site of your network into a new one : all data, files, users and roles can be copied.  
+
 It is usefull when you want to create multiple sites from a same template : do not waste your time on copy the same configuration again and again !  
+  
 Simple and user-friendly, this plugin extends WordPress core network's functionalities without polluting the dashboard.  
 
 = Features: =
@@ -105,46 +108,39 @@ Get advanded features and log functionnality !
 **Action : mucd_before_copy_files / mucd_after_copy_files**  
 Action before / after copying files  
 Args :  
-
 1. Int : from_site_id
 2. Int : to_site_id
 
 **Action : mucd_before_copy_data / mucd_after_copy_data**  
 Action before / after copying data  
 Args :  
-
 1. Int : from_site_id
 2. Int : to_site_id
 
 **Action : mucd_before_copy_users / mucd_after_copy_users**  
 Action before / after copying users  
 Args :  
-
 1. Int : from_site_id
 2. Int : to_site_id
 
 **Filter : mucd_copy_blog_data_saved_options**  
 Filter options that should be preserved in the new blog (original values from created blog will not be erased by copy of old site's tables)  
 Args :  
-
 1. Array of ( 'option_name');
 
 **Filter : mucd_default_fields_to_update**  
 Filter fields to scan for an update after data copy  
 Args :  
-
 1. Array of ( 'table_name' => array('field_1', 'field_2' ...));
 
 **Filter : mucd_default_primary_tables_to_copy**  
 Filter tables to duplicate when duplicated site is primary site  
 Args :  
-
 1. Array of ( 'table_name');
 
 **Filter : mucd_copy_dirs**  
 Filter directories and files you want to copy  
 Args :  
-
 1. String : string_to_replace
 2. Int : from_site_id
 3. Int : to_site_id
@@ -152,7 +148,6 @@ Args :
 **Filter : mucd_string_to_replace**  
 Filter which strings we want to replace during update
 Args :  
-
 1. Array of string : dirs
 2. Int : from_site_id
 3. Int : to_site_id
@@ -166,5 +161,4 @@ Some code for search and replace in SQL serialised data were initialy taken from
 = GLOBALIS = 
 
 [GLOBALIS](http://www.globalis-ms.com/) is a web IT consulting company based in Paris, and a pioneer of the PHP and LAMP platform.  
-Since 1997, we have been designing, making and maintaining Internet, intranet or mobile software.  
-We have been working with open source CMS since 2000 and have regularly been using WordPress since 2007.
+Since 1997, we have been designing, making and maintaining Internet, intranet or mobile software. We have been working with open source CMS since 2000 and have regularly been using WordPress since 2007.
