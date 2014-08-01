@@ -11,10 +11,10 @@ Clones an existing site into a new one in a multisite installation : copies all 
 
 == Description ==
 
-MultiSite Clone Duplicator adds a "Duplicate Site" functionnality to your network installation.
-It allows you to clone any site of your network into a new one : all data, files, users and roles can be copied.
-It is usefull when you want to create multiple sites from a same template : do not waste your time on copy the same configuration again and again !
-Simple and user-friendly, this plugin extends WordPress core network's functionalities without polluting the dashboard.
+MultiSite Clone Duplicator adds a "Duplicate Site" functionnality to your network installation.  
+It allows you to clone any site of your network into a new one : all data, files, users and roles can be copied.  
+It is usefull when you want to create multiple sites from a same template : do not waste your time on copy the same configuration again and again !  
+Simple and user-friendly, this plugin extends WordPress core network's functionalities without polluting the dashboard.  
 
 = Features: =
 * Clones any site of your wordpress multisite installation
@@ -41,7 +41,6 @@ In the future, you'll probably want to create a dedicated "template" blog to clo
 == Frequently Asked Questions ==
 
 = How does it work ? =
-Basically :
 * It creates a new user if the email was not an existing email
 * It creates a new blog with appropriate title and admin user
 * It copy all tables from cloned site, but keep some options (like title, domain, etc) of the new blog
@@ -61,7 +60,7 @@ Yes it does !
 = But some data are serialized ? =
 It's not a problem ! Serialized data are understood by the plugin, recursively unserialized, replaced with appropriate values, and serialized again.
 
-= After cloning, new site was created, but it goes on 404 page non found, why ? =
+= After cloning, new site was created, but it goes on 404 page, why ? =
 Check your host / server configuration : you probably cloned your site into a domain that is not available !
 
 = Which languages are currently supported? = 
@@ -104,48 +103,48 @@ Get advanded features and log functionnality !
 = Hooks = 
 
 **Action : mucd_before_copy_files / mucd_after_copy_files**
-Action before / after copying files
-Args :
+Action before / after copying files  
+Args :  
 1. from_site_id
 2. to_site_id
 
 **Action : mucd_before_copy_data / mucd_after_copy_data**
-Action before / after copying data
-Args :
+Action before / after copying data  
+Args :  
 1. from_site_id
 2. to_site_id
 
 **Action : mucd_before_copy_users / mucd_after_copy_users**
-Action before / after copying users
-Args :
+Action before / after copying users  
+Args :  
 1. from_site_id
 2. to_site_id
 
 **Filter : mucd_copy_blog_data_saved_options**
-Filter options that should be preserved in the new blog (original values from created blog will not be erased by copy of old site's tables)
-Args :
+Filter options that should be preserved in the new blog (original values from created blog will not be erased by copy of old site's tables)  
+Args :  
 1. array of ( 'option_name');
 
 **Filter : mucd_default_fields_to_update**
-Filter fields to scan for an update after data copy
-Args :
+Filter fields to scan for an update after data copy  
+Args :  
 1. array of ( 'table_name' => array('field_1', 'field_2' ...));
 
 **Filter : mucd_default_primary_tables_to_copy**
-Filter tables to duplicate when duplicated site is primary site
-Args :
+Filter tables to duplicate when duplicated site is primary site  
+Args :  
 1. array of ( 'table_name');
 
 **Filter : mucd_copy_dirs**
-Filter directories and files you want to copy
-Args :
+Filter directories and files you want to copy  
+Args :  
 1. $string_to_replace
 2. $from_site_id
 3. $to_site_id
 
 **Filter : mucd_string_to_replace**
-Filter which strings we want to replace during update
-Args :
+Filter which strings we want to replace during update  
+Args :  
 1. $dirs
 2. $from_site_id
 3. $to_site_id
@@ -153,10 +152,12 @@ Args :
 
 = Thank’s =
 
-The original version of this plugin has been developed by [Julien OGER](https://github.com/julienOG) who keeps following the project carefully.
+The original version of this plugin has been developed by [Julien OGER](https://github.com/julienOG) who keeps following the project carefully.  
 
 Some code for search and replace in SQL serialised data were initialy taken from [Lionel Pointet Wordpress Migration tool](https://github.com/lpointet/wordpress_migration)
 
 = GLOBALIS = 
 
-[GLOBALIS](http://www.globalis-ms.com/) is a web IT consulting company based in Paris, and a pioneer of the PHP and LAMP platform. Since 1997, we have been designing, making and maintaining Internet, intranet or mobile software. We have been working with open source CMS since 2000 and have regularly been using WordPress since 2007.
+[GLOBALIS](http://www.globalis-ms.com/) is a web IT consulting company based in Paris, and a pioneer of the PHP and LAMP platform.  
+Since 1997, we have been designing, making and maintaining Internet, intranet or mobile software.  
+We have been working with open source CMS since 2000 and have regularly been using WordPress since 2007.
