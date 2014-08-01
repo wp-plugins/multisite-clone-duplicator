@@ -103,53 +103,69 @@ Get advanded features and log functionnality !
 
 == Hooks ==
 
-**Action : mucd_before_copy_files / mucd_after_copy_files**  
-Action before / after copying files
-= Args : =
-1. Int : from_site_id
-2. Int : to_site_id
+= Action : mucd_before_copy_files / mucd_after_copy_files =
+Action before / after copying files  
+**Args :**
 
-**Action : mucd_before_copy_data / mucd_after_copy_data**  
-Action before / after copying data
-= Args : =
-1. Int : from_site_id
-2. Int : to_site_id
+  1. Int : from_site_id
+  2. Int : to_site_id
+  
+  
+= Action : mucd_before_copy_data / mucd_after_copy_data =
+Action before / after copying data  
+**Args :**
 
-**Action : mucd_before_copy_users / mucd_after_copy_users**  
-Action before / after copying users
-= Args : =
-1. Int : from_site_id
-2. Int : to_site_id
+  1. Int : from_site_id
+  2. Int : to_site_id
+  
+  
+= Action : mucd_before_copy_users / mucd_after_copy_users =
+Action before / after copying users  
+**Args :**
 
-**Filter : mucd_copy_blog_data_saved_options**  
-Filter options that should be preserved in the new blog (original values from created blog will not be erased by copy of old site's tables)
-= Args : =
-1. Array of ( 'option_name');
+  1. Int : from_site_id
+  2. Int : to_site_id
+  
+  
+= Filter : mucd_copy_blog_data_saved_options =
+Filter options that should be preserved in the new blog (original values from created blog will not be erased by copy of old site's tables)  
+**Args :**
 
-**Filter : mucd_default_fields_to_update**  
-Filter fields to scan for an update after data copy
-= Args : =
-1. Array of ( 'table_name' => array('field_1', 'field_2' ...));
+  1. Array of ( 'option_name');
+  
+  
+= Filter : mucd_default_fields_to_update =
+Filter fields to scan for an update after data copy  
+**Args :**
 
-**Filter : mucd_default_primary_tables_to_copy**  
-Filter tables to duplicate when duplicated site is primary site
-= Args : =
-1. Array of ( 'table_name');
+  1. Array of ( 'table_name' => array('field_1', 'field_2' ...));
+  
+  
+= Filter : mucd_default_primary_tables_to_copy =
+Filter tables to duplicate when duplicated site is primary site  
+**Args :**
 
-**Filter : mucd_copy_dirs**  
-Filter directories and files you want to copy
-= Args : =
-1. String : string_to_replace
-2. Int : from_site_id
-3. Int : to_site_id
+  1. Array of ( 'table_name');
+  
+  
+= Filter : mucd_copy_dirs =
+Filter directories and files you want to copy  
+**Args :**
 
-**Filter : mucd_string_to_replace**  
-Filter which strings we want to replace during update
-= Args : =
-1. Array of string : dirs
-2. Int : from_site_id
-3. Int : to_site_id
+  1. String : string_to_replace
+  2. Int : from_site_id
+  3. Int : to_site_id
+  
+  
+= Filter : mucd_string_to_replace =
+Filter which strings we want to replace during update  
+**Args :**
 
+  1. Array of string : dirs
+  2. Int : from_site_id
+  3. Int : to_site_id
+  
+  
 == Thank’s ==
 
 The original version of this plugin has been developed by [Julien OGER](https://github.com/julienOG) who keeps following the project carefully.  
