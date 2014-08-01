@@ -15,7 +15,7 @@ MultiSite Clone Duplicator adds a "Duplicate Site" functionnality to your networ
 
 It allows you to clone any site of your network into a new one : all data, files, users and roles can be copied.  
 
-It is usefull when you want to create multiple sites from a same template : do not waste your time on copy the same configuration again and again !  
+It is usefull when you want to create multiple sites from the same template : do not waste your time on copy the same configuration again and again !  
   
 Simple and user-friendly, this plugin extends WordPress core network's functionalities without polluting the dashboard.  
 
