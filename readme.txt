@@ -113,41 +113,41 @@ Args :
 
 **Action : mucd_before_copy_data / mucd_after_copy_data**  
 Action before / after copying data  
-Args :  
+= Args : =
 1. Int : from_site_id
 2. Int : to_site_id
 
 **Action : mucd_before_copy_users / mucd_after_copy_users**  
 Action before / after copying users  
-Args :  
+= Args : =
 1. Int : from_site_id
 2. Int : to_site_id
 
 **Filter : mucd_copy_blog_data_saved_options**  
 Filter options that should be preserved in the new blog (original values from created blog will not be erased by copy of old site's tables)  
-Args :  
+= Args : =
 1. Array of ( 'option_name');
 
 **Filter : mucd_default_fields_to_update**  
 Filter fields to scan for an update after data copy  
-Args :  
+= Args : =
 1. Array of ( 'table_name' => array('field_1', 'field_2' ...));
 
 **Filter : mucd_default_primary_tables_to_copy**  
 Filter tables to duplicate when duplicated site is primary site  
-Args :  
+= Args : =
 1. Array of ( 'table_name');
 
 **Filter : mucd_copy_dirs**  
 Filter directories and files you want to copy  
-Args :  
+= Args : =
 1. String : string_to_replace
 2. Int : from_site_id
 3. Int : to_site_id
 
 **Filter : mucd_string_to_replace**  
 Filter which strings we want to replace during update
-Args :  
+= Args : =
 1. Array of string : dirs
 2. Int : from_site_id
 3. Int : to_site_id
