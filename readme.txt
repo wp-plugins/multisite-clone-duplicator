@@ -102,7 +102,7 @@ As of now, MultiSite Clone Duplicator is available in English and in French. If 
 Get advanded features and log functionnality !
 
 == Hooks ==
-
+  
 ---------------------------------------
 = Action : mucd_before_copy_files / mucd_after_copy_files =
 Action before / after copying files  
