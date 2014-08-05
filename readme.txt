@@ -7,21 +7,21 @@ Stable tag: 0.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Clones an existing site into a new one in a multisite installation : copies all the posts, settings and files
+Clones an existing site into a new one in a multisite installation : copies all posts, settings and files
 
 == Description ==
 
-MultiSite Clone Duplicator adds a "Duplicate Site" functionnality to your network installation.  
+MultiSite Clone Duplicator adds a "Duplicate Site" functionality to your network installation.  
 
 It allows you to clone any site of your network into a new one : all data, files, users and roles can be copied.  
 
-It is usefull when you want to create multiple sites from the same template : do not waste your time on copy the same configuration again and again !  
+It is useful when you want to create multiple sites from the same template : waste your time copying the same configuration again and again !  
   
 Simple and user-friendly, this plugin extends WordPress core network's functionalities without polluting the dashboard.  
 
 = Features: =
 * Clones any site of your wordpress multisite installation
-* Copies all the posts and settings
+* Copies all posts and settings
 * Generates log files (if option is checked)
 * Copy all files from duplicated site (if option is checked)
 * Keep users and roles from duplicated site (if option is checked)
@@ -46,16 +46,16 @@ In the future, you'll probably want to create a dedicated "template" blog to clo
 = How does it work ? =
 * It creates a new user if the email was not an existing email
 * It creates a new blog with appropriate title and admin user
-* It copy all tables from cloned site, but keep some options (like title, domain, etc) of the new blog
+* It copies all tables from cloned site, but keep some options (like title, domain, etc) of the new blog
 * It searches and replaces old site's URL and DOMAINS with the new ones
 * It copies upload directory from the old site to the upload directory of the new one (if option is checked)
-* It import users and roles from the old site to the new one (if option is checked)
+* It imports users and roles from the old site to the new one (if option is checked)
 
 = Does it support subdirectory AND subdomain installations ? = 
 Yes, it supports both !
 
 = Can I clone the primary site ? = 
-Yes you can, but you want to be carrefully : WordPress saves network tables and primary blog tables with the same prefix, and some of their data are mixed. It forces us to restrict primary blog cloning to copy only the default wp tables. If you want to change this (for example, include your plugin tables in the clonage), use mucd_default_primary_tables_to_copy filter. In the future, you want probably not to copy again and again the primary blog : use a "template" blog dedicated to clonage instead.
+Yes you can, but you want to be careful : WordPress saves network tables and primary blog tables with the same prefix, and some of their data are mixed. It forces us to restrict primary blog cloning to copy only the default wp tables. If you want to change this (for example, include your plugin tables in the cloning), use mucd_default_primary_tables_to_copy filter. In the future, you want probably not to copy again and again the primary blog : use a "template" blog dedicated to clonage instead.
 
 = Does it clone plugins settings ? = 
 Yes it does !
